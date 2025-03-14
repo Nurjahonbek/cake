@@ -23,7 +23,7 @@ function YourCart() {
           </div>
         ))
       ) : (
-        <span><img style={{width:180, marginLeft:'100px', height:180, }} src={cake} /></span>
+        <span><img style={{width:180, marginLeft:'70px', height:180, }} src={cake} /></span>
       )}
       <h3>Total: ${totalPrice.toFixed(2)}</h3>
       {selectedDesserts.length > 0 ? (<p className="natural"><img src={carbon} /> This is carbon-neutral delivery</p>) : <p></p>}
@@ -33,6 +33,3 @@ function YourCart() {
 }
 
 export default YourCart;
-
-
-
