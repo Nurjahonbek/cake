@@ -5,12 +5,12 @@ import removebtn from '../image/icon-remove.svg'
 import carbon from '../image/icon-carbon.svg'
 
 function YourCart() {
-  const { selectedDesserts, totalPrice } = useSelector((store) => store.cart);
+  const { selectedDesserts, totalPrice, totalAmount } = useSelector((store) => store.cart);
   const dispatch = useDispatch();
 
   return (
     <div className="cart-container">
-      <h2 style={{color:'#C73B0F'}}>Your Cart</h2>
+      <h2 style={{color:'#C73B0F'}}>Your Cart ({totalAmount})</h2>
       {selectedDesserts.length > 0 ? (
         selectedDesserts.map((item) => (
           <div key={item.id} className="cart-item">

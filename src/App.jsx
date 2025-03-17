@@ -8,9 +8,9 @@ import { store } from './app/store'
 function App() {
 const {desserts, selectedDesserts, totalAmount, totalPrice} = useSelector((store) => store.cart)
   return (
-    <div className='box'>
+    <div className='box '>
       <h1>Desserts</h1>
-      <main className='conatiner'>
+    <main className='container'>
       <DesertList desserts= {desserts} />
       <YourCart />
     </main>
